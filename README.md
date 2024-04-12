@@ -42,6 +42,8 @@ sudo ufw enable
 
 sudo ufw allow 3000
 
+sudo ufw allow 80
+
 sudo ufw allow 22 (Importante para la conexion ssh xD)
 
 sudo ufw status
