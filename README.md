@@ -1,5 +1,22 @@
 =============================
 
+Montar servidor web con raspberry pi dietpi
+
+https://www.youtube.com/watch?v=nB-i959ZGzQ
+
+https://www.duckdns.org/
+
+=============================
+
+Desde mi internet local puedo ver el servidor nginx de mi raspberry pi, es decir,
+poniendo en el navegador del pc: http://192.168.1.134/ me aparece la web de nginx
+
+Por lo tanto el problema esta en el router y las conexiones con el exterior. Asi que miro el pdf
+adjuntado en este proyecto: guia-observa-puertos.pdf que lo encontre poniendo en google
+montar servidor web con digi (digi es mi compañia de internet)
+
+=============================
+
 sudo apt update
 sudo apt install nmap
 
