@@ -13,7 +13,7 @@ poniendo en el navegador del pc: http://192.168.1.134/ me aparece la web de ngin
 
 Por lo tanto el problema esta en el router y las conexiones con el exterior. Asi que miro el pdf
 adjuntado en este proyecto: guia-observa-puertos.pdf que lo encontre poniendo en google
-montar servidor web con digi (digi es mi compañia de internet)
+"crear servidor web con digi" (digi es mi compañia de internet)
 
 =============================
 
