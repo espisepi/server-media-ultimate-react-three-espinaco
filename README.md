@@ -15,7 +15,7 @@ Por lo tanto el problema esta en el router y las conexiones con el exterior. Asi
 adjuntado en este proyecto: guia-observa-puertos.pdf que lo encontre poniendo en google
 "crear servidor web con digi" (digi es mi compañia de internet)
 
-Ya esta solucionado, el problema era que tenia que llamar a mi compañia digi para que me activasen el acceso a internet y me pusiesen una ip estática. Ya esta hecho y me han cobrado 1€ más todos los meses por hacérmelo los h*j*s de p*t*.
+Ya esta solucionado, el problema era que tenia que llamar a mi compañia digi para que me activasen el acceso a internet y me pusiesen una ip estática. Ya esta hecho y me han cobrado 1€ más todos los meses por hacérmelo los h*j*s de p*t*, no ome tampoco es pa tanto.
 
 =============================
 
