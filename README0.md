@@ -8,6 +8,7 @@
 - scp -r "README.md" root@192.168.1.134:/root
 - scp -r "server-media-ultimate-react-three-espinaco" root@192.168.1.134:/root (proyecto backend)
 - scp -r "ultimate-react-three-espinaco" root@192.168.1.134:/root (proyecto frontend)
+  -- (otra opcion) scp -r "build" root@192.168.1.134:/root/ultimate-react-three-espinaco
 ===============================================================================
 - cd server-media-ultimate-react-three-espinaco ( tambien valido para ultimate-react-three-espinaco )
 - npm install -g yarn
@@ -42,6 +43,7 @@ Ejecuciones de aplicaciones en segundo plano (README 6)
 - tail -f myappfrontend.log
 - kill $(pgrep -f 'serve -s build -l 80')
 
+- nohup sudo serve -s build -l 80 > myappfrontend.log 2>&1 &
 - nohup yarn start > myappbackend.log 2>&1 &
 ===============================================================================
 
