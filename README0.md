@@ -9,6 +9,7 @@
 - scp -r "server-media-ultimate-react-three-espinaco" root@192.168.1.134:/root (proyecto backend)
 - scp -r "ultimate-react-three-espinaco" root@192.168.1.134:/root (proyecto frontend)
   -- (otra opcion) scp -r "build" root@192.168.1.134:/root/ultimate-react-three-espinaco
+
 ===============================================================================
 - cd server-media-ultimate-react-three-espinaco ( tambien valido para ultimate-react-three-espinaco )
 - npm install -g yarn
@@ -67,4 +68,29 @@ Para mantener actualizada la lista de videos:
   -- en mi mac para tener actualizado esa carpeta en mi proyecto del mac.
 
 - Pasarme la carpeta media por scp desde mi raspberry a mi portatil ubuntu y desde ahi al disco duro y al drive para actualizar con todos los videos
+
+
+================================================================ BUILD DE FRONTEND CON NGINX =======================
+
+- scp -r build/* root@192.168.1.134:/var/www
+
+- VER README7.md para configurar nginx:
+### Paso 5: Desplegar tu aplicación React
+
+1. **Construye tu aplicación React**:
+   - Navega a la carpeta de tu proyecto en tu máquina local y ejecuta:
+     ```bash
+     npm run build
+     ```
+   - Esto generará una carpeta `build` con los archivos estáticos.
+
+2. **Transfiere tu aplicación a la Raspberry Pi**:
+  - Puedes usar `scp` para transferir la carpeta `build` desde tu máquina local a la Raspberry Pi:
+     ```bash
+     scp -r build/* root@192.168.1.134:/var/www
+     ```
+
+- dig +short sepinaco.com
+
+================================================================ FIN BUILD DE FRONTEND CON NGINX =======================
 
