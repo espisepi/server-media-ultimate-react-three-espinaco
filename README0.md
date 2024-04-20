@@ -38,13 +38,19 @@ Ejecuciones de aplicaciones en segundo plano (README 6)
 
 
 - Aqui pondremos comandos que utilice en mi proyecto:
-- nohup sudo serve -s build -l 80 > myappfrontend.log 2>&1 &
-- ps aux | grep serve
-- tail -f myappfrontend.log
-- kill $(pgrep -f 'serve -s build -l 80')
 
 - nohup sudo serve -s build -l 80 > myappfrontend.log 2>&1 &
 - nohup yarn start > myappbackend.log 2>&1 &
+
+- ps aux | grep serve
+- ps aux | grep node
+
+- tail -f myappfrontend.log
+- tail -f myappbackend.log
+
+- kill $(pgrep -f 'serve -s build -l 80')
+- kill $(pgrep -f 'node app.js')
+
 ===============================================================================
 
 

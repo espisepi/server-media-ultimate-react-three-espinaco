@@ -6,6 +6,23 @@ const cors = require('cors');
 
 app.use(cors());
 
+
+// Middleware para registrar IP de cada solicitud
+app.use((req, res, next) => {
+
+  // Obtenemos la ip del cliente
+  const ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress;
+
+  // Construyendo la URL completa
+  const protocol = req.protocol;
+  const host = req.get('host'); // Obtiene el host y el puerto
+  const url = req.originalUrl; // Incluye la ruta y la cadena de consulta
+  const fullUrl = `${protocol}://${host}${url}`;
+
+  console.log(`Solicitud: ${ip} · ${fullUrl}`);
+  next();
+});
+
 const mediaDirectory = path.join(__dirname, 'media');
 
 // Middleware para servir archivos estáticos desde la carpeta 'media'
