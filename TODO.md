@@ -7,3 +7,5 @@
 - TODO: Montar este servidor con raspberry en las casas de las personas y cobrar por ello. Ademas las personas podran subir sus propios videos al servidor -> Crear opcion para poder subir video en el frontend react y backend node. Esa opcion solo estara habilitada en las casas donde monte el servidor.
 8
 - TODO: Poner la camara webcam con videopoints (y la musica la sigo pudiendo seleccionar como audio) (ya tenia ese codigo escrito en el original project react-three-espinaco )
+
+TODO: Poner videos de los shavales y mostrarlos al poner una contraseña diferente a la de los videoclips musicales
