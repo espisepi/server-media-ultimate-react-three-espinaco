@@ -55,9 +55,9 @@ app.get('/', (req, res) => {
 const port = process.env.PORT || 3000;
 
 // Descomentar para configurar http
-// app.listen(port, () => {
-//   console.log(`Servidor escuchando en el puerto ${port}`);
-// });
+app.listen(port, () => {
+  console.log(`Servidor escuchando en el puerto ${port}`);
+});
 
 // Comentar para configurar http
 // const httpsOptions = {
@@ -66,14 +66,14 @@ const port = process.env.PORT || 3000;
 //   // Si Let's Encrypt te ha dado una cadena de certificados (chain), también deberías incluirla
 //   ca: fs.readFileSync(path.resolve(__dirname, 'certs/chain.pem'))
 // };
-const httpsOptions = {
-  key: fs.readFileSync('/etc/letsencrypt/live/sepinaco.com/privkey.pem'),
-  cert: fs.readFileSync('/etc/letsencrypt/live/sepinaco.com/fullchain.pem'),
-  // Si Let's Encrypt te ha dado una cadena de certificados (chain), también deberías incluirla
-  ca: fs.readFileSync(path.resolve(__dirname, '/etc/letsencrypt/live/sepinaco.com/chain.pem'))
-};
+// const httpsOptions = {
+//   key: fs.readFileSync('/etc/letsencrypt/live/sepinaco.com/privkey.pem'),
+//   cert: fs.readFileSync('/etc/letsencrypt/live/sepinaco.com/fullchain.pem'),
+//   // Si Let's Encrypt te ha dado una cadena de certificados (chain), también deberías incluirla
+//   ca: fs.readFileSync(path.resolve(__dirname, '/etc/letsencrypt/live/sepinaco.com/chain.pem'))
+// };
 
-https.createServer(httpsOptions, app).listen(port, () => {
-  console.log('Servidor HTTPS corriendo en puerto 3000');
-});
+// https.createServer(httpsOptions, app).listen(port, () => {
+//   console.log('Servidor HTTPS corriendo en puerto 3000');
+// });
 
