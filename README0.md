@@ -54,6 +54,9 @@ Ejecuciones de aplicaciones en segundo plano (README 6)
 
 ===============================================================================
 
+UPDATED:
+- scp -r . root@192.168.1.134:/root/server-media-ultimate-react-three-espinaco/media
+
 
 Para mantener actualizada la lista de videos:
 
