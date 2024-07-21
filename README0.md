@@ -17,6 +17,7 @@
 - yarn start
 (ultimate-react-three-espinaco): 
 - npm install -g serve
+- yarn (aka yarn install)
 - yarn build
 - cd build
 - sudo serve -s build -l 80
